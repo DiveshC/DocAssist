@@ -2,21 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <meta
-      http-equiv="X-Content-Security-Policy"
-      content="default-src 'self'; script-src 'self'"
-    />
-    <title>Hello from Electron renderer!</title>
-    <link href="./dist/tailwind.css" rel="stylesheet">
-  </head>
+    <title>Electron + React + TS + Tailwind</title>
+    <link href="/src/style.css" rel="stylesheet">
   <body>
-    <div class="bg-red-500 text-white p-4 rounded-lg">
-    🚀 If you see a red box with white text, Tailwind is working!
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/renderer/main.tsx"></script>
   </body>
 </html>
